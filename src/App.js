@@ -6,7 +6,7 @@ function App() {
   const [login, setLogin] = useState(true);
   async function dataFetchHandler() {
     try {
-      const fetched = await fetch("https://api.adviceslip.com/advice")
+      await fetch("https://api.adviceslip.com/advice")
         .then((data) => {
           return data.json();
         })
